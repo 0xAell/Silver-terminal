@@ -1,7 +1,7 @@
 {
   "name": "silver-fvg-backtest",
   "version": "1.0.0",
-  "description": "Live terminal: https://ael-dev3.github.io/Silver-terminal/",
+  "description": "Historical Hyperliquid SLV/USDC charts and a weekly Dukascopy silver reference",
   "main": "app.js",
   "scripts": {
     "build:terminal": "esbuild src/terminal/main.ts --bundle --format=iife --platform=browser --target=es2020 --outfile=app.js",
@@ -12,16 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ael-dev3/Silver.git"
+    "url": "git+https://github.com/0xAell/Silver.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/ael-dev3/Silver/issues"
+    "url": "https://github.com/0xAell/Silver/issues"
   },
-  "homepage": "https://github.com/ael-dev3/Silver#readme",
+  "homepage": "https://0xaell.github.io/Silver-terminal/",
   "dependencies": {
     "lightweight-charts": "^5.1.0"
   },

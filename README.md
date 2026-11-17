@@ -1,15 +1,13 @@
 # Hyperliquid Silver Terminal
 
-[![CI](https://github.com/ael-dev3/Silver/actions/workflows/ci.yml/badge.svg)](https://github.com/ael-dev3/Silver/actions/workflows/ci.yml)
+[![CI](https://github.com/0xAell/Silver/actions/workflows/ci.yml/badge.svg)](https://github.com/0xAell/Silver/actions/workflows/ci.yml)
 
-Live links:
+Explore historical silver prices in two browser charts. Both read checked-in snapshots and show the dates covered by each dataset.
 
-- Silver Terminal: https://ael-dev3.github.io/Silver-terminal/ - Hyperliquid-only `SLV/USDC` data across the checked-in rolling timeframes.
-- Silver Weekly Reference: https://ael-dev3.github.io/Silver-terminal/workbench/ - long-history `1w` silver data only, using the normalized Dukascopy `XAGUSD` weekly file.
+- [Open the Silver Terminal](https://0xaell.github.io/Silver-terminal/) for Hyperliquid `SLV/USDC` spot candles from one minute to one week.
+- [Open the weekly reference](https://0xaell.github.io/Silver-terminal/workbench/) for Dukascopy `XAGUSD` history dating to 1999, with indicators and a simple backtest.
 
-Public Pages repo: https://github.com/ael-dev3/Silver-terminal
-
-This project centers on Hyperliquid `SLV/USDC` spot data and ships two open-source chart interfaces: a Hyperliquid-only terminal and a locked weekly reference site for the long-history Dukascopy series. It also includes a long-history weekly reference file built from Dukascopy `XAGUSD` daily data and normalized into the same candle schema.
+[Source and tests](https://github.com/0xAell/Silver) · [GitHub Pages repository](https://github.com/0xAell/Silver-terminal)
 
 ## What is included
 

@@ -411,6 +411,10 @@ class SilverTerminalApp {
   private wireKeyboard(intervals: readonly Interval[]): void {
     window.addEventListener("keydown", (event) => {
       if (
+        event.defaultPrevented ||
+        event.isComposing ||
+        event.metaKey || event.ctrlKey || event.altKey || event.shiftKey ||
+        (event.target instanceof HTMLElement && event.target.isContentEditable) ||
         event.target instanceof HTMLInputElement ||
         event.target instanceof HTMLTextAreaElement ||
         event.target instanceof HTMLSelectElement

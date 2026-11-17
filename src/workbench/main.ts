@@ -309,6 +309,10 @@ class WorkbenchApp {
   private initializeKeyboardShortcuts(): void {
     window.addEventListener("keydown", async (event) => {
       if (
+        event.defaultPrevented ||
+        event.isComposing ||
+        event.metaKey || event.ctrlKey || event.altKey || event.shiftKey ||
+        (event.target instanceof HTMLElement && event.target.isContentEditable) ||
         event.target instanceof HTMLInputElement ||
         event.target instanceof HTMLSelectElement ||
         event.target instanceof HTMLTextAreaElement
